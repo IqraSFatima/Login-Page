@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: beige;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background-color: white;
+            width: 50vw;
+            padding: 30px;
+            height: 40vh;
+        }
+        .container h1{
+            color: brown;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        input{  
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            outline: none;
+            border: none;
+            border-bottom: 1px dashed brown;
+        }
+        button{
+            margin-left: 40%;
+            padding: 5px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Form</h1>
+        <form>
+            <!-- <label for="fname">First Name</label><br> -->
+            <input type="text" id="fname" placeholder="Enter your first name" required><br>
+            <!-- <label for="lname">Last Name</label><br> -->
+            <input type="text" id="lname" placeholder="Enter your last name" required><br>
+            <!-- <label for="email">E-mail</label><br> -->
+            <input type="text" id="email" placeholder="Enter your email-id" required><br>
+            <!-- <label for="pass">Password</label><br> -->
+            <input type="password" id="pass" minlength="8" maxlength="16" placeholder="enter your password" required><br>
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
